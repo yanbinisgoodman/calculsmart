@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ResultListView: View {
-    private let viewModel = CalculSmartViewModel.shared
+    @ObservedObject var viewModel = CalculSmartViewModel.shared
     
     var body: some View {
         ScrollView (.horizontal, showsIndicators: false) {
@@ -18,7 +18,7 @@ struct ResultListView: View {
                 }), id: \.id) { line in
                     Button("\("result".localized)\(line.id)") {
                         viewModel.handleKeyboardEvent(input: .variable(line.id))
-                    }.buttonStyle(CalcKeyboardButtonStyle())
+                    }.buttonStyle(ResultButtonStyle())
                 }
             }.padding(.horizontal, /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
             .padding(.vertical, 5)

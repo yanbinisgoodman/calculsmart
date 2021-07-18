@@ -20,18 +20,7 @@ struct ContentView: View {
                         .rotationEffect(.degrees(180))
                 }
             }.rotationEffect(.degrees(180))
-            ScrollView (.horizontal, showsIndicators: false) {
-                HStack {
-                    ForEach(viewModel.histoLines.filter({ line in
-                        return line.type == .history && line.id < viewModel.histoLines[viewModel.currentLineIndex].id
-                    }), id: \.id) { line in
-                        Button("\("result".localized)\(line.id)") {
-                            viewModel.handleKeyboardEvent(input: .variable(line.id))
-                        }.buttonStyle(ResultButtonStyle())
-                    }
-                }.padding(.horizontal, /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
-                .padding(.vertical, 5)
-            }
+            ResultListView()
             KeyboardView()
         }
     }
