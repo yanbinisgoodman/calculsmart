@@ -60,9 +60,11 @@ struct KeyboardView: View {
                     Button("1") {
                         CalculSmartViewModel.shared.handleKeyboardEvent(input: .number(1))
                     }.buttonStyle(CalcKeyboardButtonStyle())
-                    Button("🤩") {
-                        CalculSmartViewModel.shared.handleKeyboardEvent(input: .emoji)
-                    }.buttonStyle(CalcKeyboardButtonStyle())
+                    Button(action: {
+                        CalculSmartViewModel.shared.handleKeyboardEvent(input: .backspace)
+                    }, label: {
+                        Image(systemName: "delete.left")
+                    }).buttonStyle(CalcKeyboardButtonStyle())
                 }
                 VStack (spacing: lineSpacing) {
                     Button("2") {

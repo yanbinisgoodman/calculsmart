@@ -9,6 +9,7 @@ import Foundation
 
 enum KeyboardInput {
     case AC
+    case backspace
     case modulo
     case divide
     case multiply

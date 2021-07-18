@@ -9,17 +9,14 @@ import Foundation
 import SwiftUI
 
 struct CalcKeyboardButtonStyle: ButtonStyle {
-    private let isEqualButton: Bool!
-    private let background: Color
-    private let textColor = Color("textKeyIput")
-    private let keyHeight: CGFloat = 40
-    private let cornerRadius: CGFloat = 10
-    private let shadowRadius: CGFloat = 4
+    private let isEqualButton: Bool
+    private var backgroundColor: Color
+    private var textColor: Color
     
-    init(isEqualButton: Bool = false, backgroundColor: Color = Color("backgroundTextKeyInput")) {
+    init(isEqualButton: Bool = false, backgroundColor: Color = Color("backgroundTextKeyInput"), textColor: Color = Color("textKeyIput")) {
         self.isEqualButton = isEqualButton
-        self.background = backgroundColor
-        
+        self.backgroundColor = backgroundColor
+        self.textColor = textColor
     }
     
     func makeBody(configuration: Self.Configuration) -> some View {
@@ -27,14 +24,14 @@ struct CalcKeyboardButtonStyle: ButtonStyle {
                 .frame(
                     minWidth: 50,
                     maxWidth: 150,
-                    minHeight: isEqualButton ? keyHeight * 2 : keyHeight,
-                    maxHeight: isEqualButton ? keyHeight * 2 : keyHeight,
+                    minHeight: isEqualButton ? 100 : 40,
+                    maxHeight: isEqualButton ? 100 : 40,
                     alignment: .center
                 ).padding(.horizontal, /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
                 .foregroundColor(textColor)
-                .background(background)
-                .cornerRadius(cornerRadius)
-                .shadow(radius: configuration.isPressed ? 1 : shadowRadius)
+                .background(backgroundColor)
+                .cornerRadius(10)
+                .shadow(radius: 1)
                 .opacity(configuration.isPressed ? 0.8 : 1)
     }
 }

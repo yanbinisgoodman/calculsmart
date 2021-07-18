@@ -11,11 +11,18 @@ struct EnterKeyView: View {
     @ObservedObject var viewModel = CalculSmartViewModel.shared
 
     var body: some View {
-        Button("=") {
-            CalculSmartViewModel.shared.handleKeyboardEvent(input: .equal)
-        }.disabled(viewModel.histoLines[viewModel.currentLineIndex].value == nil)
-        .opacity(viewModel.histoLines[viewModel.currentLineIndex].value == nil ? 0.4 : 1)
-        .buttonStyle(CalcKeyboardButtonStyle(isEqualButton: true))
+        if viewModel.histoLines[viewModel.currentLineIndex].value == nil {
+            Button("=") {
+                CalculSmartViewModel.shared.handleKeyboardEvent(input: .equal)
+            }.disabled(true)
+            .buttonStyle(CalcKeyboardButtonStyle(isEqualButton: true, backgroundColor: Color("textKeyIput"), textColor: Color("backgroundTextKeyInput")))
+            .opacity(0.6)
+        } else {
+            Button("=") {
+                CalculSmartViewModel.shared.handleKeyboardEvent(input: .equal)
+            }.buttonStyle(CalcKeyboardButtonStyle(isEqualButton: true))
+
+        }
     }
 }
 

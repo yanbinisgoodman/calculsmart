@@ -53,6 +53,8 @@ class CalculSmartViewModel: ObservableObject {
             print("emoji")
         case .variable(let id):
             self.histoLines[currentLineIndex].text += "{\("result".localized)\(id)}"
+        case .backspace:
+            self.histoLines[currentLineIndex].text = String(self.histoLines[currentLineIndex].text.dropLast())
         }
     }
     
