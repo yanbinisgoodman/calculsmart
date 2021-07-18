@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,30 @@
 		9B1A6D4A26A45F3A00C2FFFD /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1A6D3126A45F3800C2FFFD /* Persistence.swift */; };
 		9B1A6D4B26A45F3A00C2FFFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B1A6D3226A45F3A00C2FFFD /* Assets.xcassets */; };
 		9B1A6D4C26A45F3A00C2FFFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B1A6D3226A45F3A00C2FFFD /* Assets.xcassets */; };
+		9B1A6D5F26A45F7D00C2FFFD /* CalculSmartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1A6D5E26A45F7D00C2FFFD /* CalculSmartViewModel.swift */; };
+		9B1A6D6026A45F7D00C2FFFD /* CalculSmartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1A6D5E26A45F7D00C2FFFD /* CalculSmartViewModel.swift */; };
+		9B1A6D6326A45FA500C2FFFD /* Expression in Frameworks */ = {isa = PBXBuildFile; productRef = 9B1A6D6226A45FA500C2FFFD /* Expression */; };
+		9B1A6D6626A45FB500C2FFFD /* Expression in Frameworks */ = {isa = PBXBuildFile; productRef = 9B1A6D6526A45FB500C2FFFD /* Expression */; };
+		9B1A6D6926A4604400C2FFFD /* HistoLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1A6D6826A4604400C2FFFD /* HistoLineView.swift */; };
+		9B1A6D6A26A4604400C2FFFD /* HistoLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1A6D6826A4604400C2FFFD /* HistoLineView.swift */; };
+		9B1A6D6E26A4605C00C2FFFD /* ResultListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1A6D6C26A4605C00C2FFFD /* ResultListView.swift */; };
+		9B1A6D6F26A4605C00C2FFFD /* ResultListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1A6D6C26A4605C00C2FFFD /* ResultListView.swift */; };
+		9B1A6D7026A4605C00C2FFFD /* ResultButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1A6D6D26A4605C00C2FFFD /* ResultButtonStyle.swift */; };
+		9B1A6D7126A4605C00C2FFFD /* ResultButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1A6D6D26A4605C00C2FFFD /* ResultButtonStyle.swift */; };
+		9B1A6D7726A4607400C2FFFD /* EnterKeyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1A6D7326A4607400C2FFFD /* EnterKeyView.swift */; };
+		9B1A6D7826A4607400C2FFFD /* EnterKeyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1A6D7326A4607400C2FFFD /* EnterKeyView.swift */; };
+		9B1A6D7926A4607400C2FFFD /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1A6D7426A4607400C2FFFD /* KeyboardView.swift */; };
+		9B1A6D7A26A4607400C2FFFD /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1A6D7426A4607400C2FFFD /* KeyboardView.swift */; };
+		9B1A6D7B26A4607400C2FFFD /* KeyboardInputEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1A6D7526A4607400C2FFFD /* KeyboardInputEnum.swift */; };
+		9B1A6D7C26A4607400C2FFFD /* KeyboardInputEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1A6D7526A4607400C2FFFD /* KeyboardInputEnum.swift */; };
+		9B1A6D7D26A4607400C2FFFD /* CalcKeyboardButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1A6D7626A4607400C2FFFD /* CalcKeyboardButtonStyle.swift */; };
+		9B1A6D7E26A4607400C2FFFD /* CalcKeyboardButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1A6D7626A4607400C2FFFD /* CalcKeyboardButtonStyle.swift */; };
+		9B1A6D8326A4618500C2FFFD /* HistoLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1A6D8226A4618500C2FFFD /* HistoLine.swift */; };
+		9B1A6D8426A4618500C2FFFD /* HistoLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1A6D8226A4618500C2FFFD /* HistoLine.swift */; };
+		9B1A6D8A26A46BB900C2FFFD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9B1A6D8D26A46BB900C2FFFD /* Localizable.strings */; };
+		9B1A6D8B26A46BB900C2FFFD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9B1A6D8D26A46BB900C2FFFD /* Localizable.strings */; };
+		9B1A6D9026A46C0000C2FFFD /* String+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1A6D8F26A46C0000C2FFFD /* String+Localizable.swift */; };
+		9B1A6D9126A46C0000C2FFFD /* String+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1A6D8F26A46C0000C2FFFD /* String+Localizable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +54,18 @@
 		9B1A6D3F26A45F3A00C2FFFD /* CalculSmart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalculSmart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B1A6D4126A45F3A00C2FFFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B1A6D4226A45F3A00C2FFFD /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		9B1A6D5E26A45F7D00C2FFFD /* CalculSmartViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculSmartViewModel.swift; sourceTree = "<group>"; };
+		9B1A6D6826A4604400C2FFFD /* HistoLineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoLineView.swift; sourceTree = "<group>"; };
+		9B1A6D6C26A4605C00C2FFFD /* ResultListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultListView.swift; sourceTree = "<group>"; };
+		9B1A6D6D26A4605C00C2FFFD /* ResultButtonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultButtonStyle.swift; sourceTree = "<group>"; };
+		9B1A6D7326A4607400C2FFFD /* EnterKeyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterKeyView.swift; sourceTree = "<group>"; };
+		9B1A6D7426A4607400C2FFFD /* KeyboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
+		9B1A6D7526A4607400C2FFFD /* KeyboardInputEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardInputEnum.swift; sourceTree = "<group>"; };
+		9B1A6D7626A4607400C2FFFD /* CalcKeyboardButtonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalcKeyboardButtonStyle.swift; sourceTree = "<group>"; };
+		9B1A6D8226A4618500C2FFFD /* HistoLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoLine.swift; sourceTree = "<group>"; };
+		9B1A6D8C26A46BB900C2FFFD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		9B1A6D8E26A46BBC00C2FFFD /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		9B1A6D8F26A46C0000C2FFFD /* String+Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localizable.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B1A6D6326A45FA500C2FFFD /* Expression in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B1A6D6626A45FB500C2FFFD /* Expression in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,17 +95,21 @@
 				9B1A6D3926A45F3A00C2FFFD /* iOS */,
 				9B1A6D4026A45F3A00C2FFFD /* macOS */,
 				9B1A6D3826A45F3A00C2FFFD /* Products */,
+				9B1A6D6426A45FB500C2FFFD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		9B1A6D2C26A45F3800C2FFFD /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				9B1A6D8926A46B8F00C2FFFD /* Supporting Files */,
+				9B1A6D8826A46B8600C2FFFD /* Extensions */,
 				9B1A6D2F26A45F3800C2FFFD /* CalculSmartApp.swift */,
 				9B1A6D3026A45F3800C2FFFD /* ContentView.swift */,
-				9B1A6D3126A45F3800C2FFFD /* Persistence.swift */,
-				9B1A6D3226A45F3A00C2FFFD /* Assets.xcassets */,
-				9B1A6D2D26A45F3800C2FFFD /* CalculSmart.xcdatamodeld */,
+				9B1A6D5E26A45F7D00C2FFFD /* CalculSmartViewModel.swift */,
+				9B1A6D7226A4606100C2FFFD /* Keyboard */,
+				9B1A6D6B26A4604A00C2FFFD /* ResultList */,
+				9B1A6D6726A4602200C2FFFD /* HistoLine */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -98,6 +140,61 @@
 			path = macOS;
 			sourceTree = "<group>";
 		};
+		9B1A6D6426A45FB500C2FFFD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9B1A6D6726A4602200C2FFFD /* HistoLine */ = {
+			isa = PBXGroup;
+			children = (
+				9B1A6D6826A4604400C2FFFD /* HistoLineView.swift */,
+				9B1A6D8226A4618500C2FFFD /* HistoLine.swift */,
+			);
+			path = HistoLine;
+			sourceTree = "<group>";
+		};
+		9B1A6D6B26A4604A00C2FFFD /* ResultList */ = {
+			isa = PBXGroup;
+			children = (
+				9B1A6D6D26A4605C00C2FFFD /* ResultButtonStyle.swift */,
+				9B1A6D6C26A4605C00C2FFFD /* ResultListView.swift */,
+			);
+			path = ResultList;
+			sourceTree = "<group>";
+		};
+		9B1A6D7226A4606100C2FFFD /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				9B1A6D7626A4607400C2FFFD /* CalcKeyboardButtonStyle.swift */,
+				9B1A6D7326A4607400C2FFFD /* EnterKeyView.swift */,
+				9B1A6D7526A4607400C2FFFD /* KeyboardInputEnum.swift */,
+				9B1A6D7426A4607400C2FFFD /* KeyboardView.swift */,
+			);
+			path = Keyboard;
+			sourceTree = "<group>";
+		};
+		9B1A6D8826A46B8600C2FFFD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9B1A6D8F26A46C0000C2FFFD /* String+Localizable.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9B1A6D8926A46B8F00C2FFFD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9B1A6D8D26A46BB900C2FFFD /* Localizable.strings */,
+				9B1A6D2D26A45F3800C2FFFD /* CalculSmart.xcdatamodeld */,
+				9B1A6D3126A45F3800C2FFFD /* Persistence.swift */,
+				9B1A6D3226A45F3A00C2FFFD /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -114,6 +211,9 @@
 			dependencies = (
 			);
 			name = "CalculSmart (iOS)";
+			packageProductDependencies = (
+				9B1A6D6226A45FA500C2FFFD /* Expression */,
+			);
 			productName = "CalculSmart (iOS)";
 			productReference = 9B1A6D3726A45F3A00C2FFFD /* CalculSmart.app */;
 			productType = "com.apple.product-type.application";
@@ -131,6 +231,9 @@
 			dependencies = (
 			);
 			name = "CalculSmart (macOS)";
+			packageProductDependencies = (
+				9B1A6D6526A45FB500C2FFFD /* Expression */,
+			);
 			productName = "CalculSmart (macOS)";
 			productReference = 9B1A6D3F26A45F3A00C2FFFD /* CalculSmart.app */;
 			productType = "com.apple.product-type.application";
@@ -159,8 +262,12 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
 			);
 			mainGroup = 9B1A6D2726A45F3800C2FFFD;
+			packageReferences = (
+				9B1A6D6126A45FA500C2FFFD /* XCRemoteSwiftPackageReference "Expression" */,
+			);
 			productRefGroup = 9B1A6D3826A45F3A00C2FFFD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -176,6 +283,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B1A6D8A26A46BB900C2FFFD /* Localizable.strings in Resources */,
 				9B1A6D4B26A45F3A00C2FFFD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -184,6 +292,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B1A6D8B26A46BB900C2FFFD /* Localizable.strings in Resources */,
 				9B1A6D4C26A45F3A00C2FFFD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -195,10 +304,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B1A6D6E26A4605C00C2FFFD /* ResultListView.swift in Sources */,
+				9B1A6D5F26A45F7D00C2FFFD /* CalculSmartViewModel.swift in Sources */,
 				9B1A6D4326A45F3A00C2FFFD /* CalculSmart.xcdatamodeld in Sources */,
+				9B1A6D7926A4607400C2FFFD /* KeyboardView.swift in Sources */,
+				9B1A6D8326A4618500C2FFFD /* HistoLine.swift in Sources */,
 				9B1A6D4926A45F3A00C2FFFD /* Persistence.swift in Sources */,
+				9B1A6D7D26A4607400C2FFFD /* CalcKeyboardButtonStyle.swift in Sources */,
 				9B1A6D4526A45F3A00C2FFFD /* CalculSmartApp.swift in Sources */,
+				9B1A6D7726A4607400C2FFFD /* EnterKeyView.swift in Sources */,
+				9B1A6D6926A4604400C2FFFD /* HistoLineView.swift in Sources */,
+				9B1A6D7B26A4607400C2FFFD /* KeyboardInputEnum.swift in Sources */,
+				9B1A6D7026A4605C00C2FFFD /* ResultButtonStyle.swift in Sources */,
 				9B1A6D4726A45F3A00C2FFFD /* ContentView.swift in Sources */,
+				9B1A6D9026A46C0000C2FFFD /* String+Localizable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,14 +325,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B1A6D6F26A4605C00C2FFFD /* ResultListView.swift in Sources */,
+				9B1A6D6026A45F7D00C2FFFD /* CalculSmartViewModel.swift in Sources */,
 				9B1A6D4426A45F3A00C2FFFD /* CalculSmart.xcdatamodeld in Sources */,
+				9B1A6D7A26A4607400C2FFFD /* KeyboardView.swift in Sources */,
+				9B1A6D8426A4618500C2FFFD /* HistoLine.swift in Sources */,
 				9B1A6D4A26A45F3A00C2FFFD /* Persistence.swift in Sources */,
+				9B1A6D7E26A4607400C2FFFD /* CalcKeyboardButtonStyle.swift in Sources */,
 				9B1A6D4626A45F3A00C2FFFD /* CalculSmartApp.swift in Sources */,
+				9B1A6D7826A4607400C2FFFD /* EnterKeyView.swift in Sources */,
+				9B1A6D6A26A4604400C2FFFD /* HistoLineView.swift in Sources */,
+				9B1A6D7C26A4607400C2FFFD /* KeyboardInputEnum.swift in Sources */,
+				9B1A6D7126A4605C00C2FFFD /* ResultButtonStyle.swift in Sources */,
 				9B1A6D4826A45F3A00C2FFFD /* ContentView.swift in Sources */,
+				9B1A6D9126A46C0000C2FFFD /* String+Localizable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9B1A6D8D26A46BB900C2FFFD /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B1A6D8C26A46BB900C2FFFD /* en */,
+				9B1A6D8E26A46BBC00C2FFFD /* fr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		9B1A6D4D26A45F3A00C2FFFD /* Debug */ = {
@@ -451,6 +592,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9B1A6D6126A45FA500C2FFFD /* XCRemoteSwiftPackageReference "Expression" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nicklockwood/Expression.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.13.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9B1A6D6226A45FA500C2FFFD /* Expression */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9B1A6D6126A45FA500C2FFFD /* XCRemoteSwiftPackageReference "Expression" */;
+			productName = Expression;
+		};
+		9B1A6D6526A45FB500C2FFFD /* Expression */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9B1A6D6126A45FA500C2FFFD /* XCRemoteSwiftPackageReference "Expression" */;
+			productName = Expression;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		9B1A6D2D26A45F3800C2FFFD /* CalculSmart.xcdatamodeld */ = {
