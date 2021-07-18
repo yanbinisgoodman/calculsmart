@@ -43,7 +43,7 @@ struct HistoLine {
     init(text: String = "", type: HistoLineType) {
         HistoLine.maxId += 1
         self.id = HistoLine.maxId
-        self.text = ""
+        self.text = text
         self.type = type
     }
 }

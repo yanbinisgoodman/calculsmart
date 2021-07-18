@@ -29,12 +29,14 @@ struct HistoLineView: View {
             switch line.type {
             case .history:
                 Text("\("result".localized)\(line.id)")
+                    .font(.caption)
                     .foregroundColor(.gray)
                     .padding(.horizontal, 0)
                 Text(" = ")
                     .foregroundColor(.gray)
                     .padding(.horizontal, 0)
                 Text(line.text == "" ? "0" : line.text)
+                    .font(.headline)
                     .foregroundColor(.gray)
                 if let value = line.value {
                     Text(" = ")
@@ -45,18 +47,28 @@ struct HistoLineView: View {
                         .padding(.trailing, 10)
                 }
             case .current:
-                Text(line.text == "" ? "0" : line.text)
-                    .font(.largeTitle)
-                    .padding(.horizontal, 10)
-                    .padding(.vertical, 4)
-                if let value = line.value {
-                    Text(" = ")
-                        .font(.largeTitle)
+                HStack (spacing: 0) {
+                    Text("\("result".localized)\(line.id)")
+                        .font(.caption)
+                        .foregroundColor(.gray)
                         .padding(.vertical, 4)
-                    Text("\(format(number: value))")
+                    Text(" = ")
+                        .foregroundColor(.gray)
+                    Text(line.text == "" ? "0" : line.text)
                         .font(.largeTitle)
                         .padding(.horizontal, 10)
                         .padding(.vertical, 4)
+                    if let value = line.value {
+                        Text(" = ")
+                            .padding(.vertical, 4)
+                            .foregroundColor(.gray)
+                        Text("\(format(number: value))")
+                            .font(.caption)
+                            .foregroundColor(.gray)
+                            .padding(.trailing, 10)
+                            .padding(.vertical, 4)
+                    }
+
                 }
             }
         }.padding(.vertical, 4)
