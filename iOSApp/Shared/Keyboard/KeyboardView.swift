@@ -22,9 +22,12 @@ struct KeyboardView: View {
                 Button("/") {
                     CalculSmartViewModel.shared.handleKeyboardEvent(input: .divide)
                 }.buttonStyle(CalcKeyboardButtonStyle())
-                Button("x") {
+                
+                Button(action: {
                     CalculSmartViewModel.shared.handleKeyboardEvent(input: .multiply)
-                }.buttonStyle(CalcKeyboardButtonStyle())
+                }, label: {
+                    Image(systemName: "multiply")
+                }).buttonStyle(CalcKeyboardButtonStyle())
             }
             HStack {
                 Button("7") {
@@ -37,9 +40,11 @@ struct KeyboardView: View {
                 Button("9") {
                     CalculSmartViewModel.shared.handleKeyboardEvent(input: .number(9))
                 }.buttonStyle(CalcKeyboardButtonStyle())
-                Button("-") {
+                Button(action: {
                     CalculSmartViewModel.shared.handleKeyboardEvent(input: .minus)
-                }.buttonStyle(CalcKeyboardButtonStyle())
+                }, label: {
+                    Image(systemName: "minus")
+                }).buttonStyle(CalcKeyboardButtonStyle())
             }
             HStack {
                 Button("4") {
@@ -51,9 +56,11 @@ struct KeyboardView: View {
                 Button("6") {
                     CalculSmartViewModel.shared.handleKeyboardEvent(input: .number(6))
                 }.buttonStyle(CalcKeyboardButtonStyle())
-                Button("+") {
+                Button(action: {
                     CalculSmartViewModel.shared.handleKeyboardEvent(input: .add)
-                }.buttonStyle(CalcKeyboardButtonStyle())
+                }, label: {
+                    Image(systemName: "plus")
+                }).buttonStyle(CalcKeyboardButtonStyle())
             }
             HStack {
                 VStack (spacing: lineSpacing) {

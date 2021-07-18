@@ -12,15 +12,17 @@ struct EnterKeyView: View {
 
     var body: some View {
         if viewModel.histoLines[viewModel.currentLineIndex].value == nil {
-            Button("=") {
-                CalculSmartViewModel.shared.handleKeyboardEvent(input: .equal)
-            }.disabled(true)
+            Button(action: {}, label: {
+                Image(systemName: "equal")
+            }).disabled(true)
             .buttonStyle(CalcKeyboardButtonStyle(isEqualButton: true, backgroundColor: Color("textKeyIput"), textColor: Color("backgroundTextKeyInput")))
             .opacity(0.6)
         } else {
-            Button("=") {
+            Button(action: {
                 CalculSmartViewModel.shared.handleKeyboardEvent(input: .equal)
-            }.buttonStyle(CalcKeyboardButtonStyle(isEqualButton: true))
+            }, label: {
+                Image(systemName: "equal")
+            }).buttonStyle(CalcKeyboardButtonStyle(isEqualButton: true))
 
         }
     }

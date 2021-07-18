@@ -27,7 +27,7 @@ struct HistoLine {
                     let line = CalculSmartViewModel.shared.histoLines.first { line in
                         line.id == idVar
                     }
-                    evaluatedText = evaluatedText.replacingOccurrences(of: "{\(String(text[Range(result.range, in: text)!]))}", with: "\(line?.value ?? 0)")
+                    evaluatedText = evaluatedText.replacingOccurrences(of: "[\(String(text[Range(result.range, in: text)!]))]", with: "\(line?.value ?? 0)")
                 }
             } catch(let error) {
                 print(error.localizedDescription)
