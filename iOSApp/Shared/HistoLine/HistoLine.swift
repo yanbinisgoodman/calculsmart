@@ -18,10 +18,10 @@ struct HistoLine {
         get {
             var evaluatedText = self.text
             do {
-                let regex = try NSRegularExpression(pattern: "\("result".localized)[0-9]+", options: .caseInsensitive)
+                let regex = try NSRegularExpression(pattern: "r[0-9]+", options: .caseInsensitive)
                 let matches = regex.matches(in: self.text, range: NSRange(self.text.startIndex..., in: self.text))
                 matches.forEach { result in
-                    guard let idVar = Int(String(text[Range(result.range, in: text)!]).dropFirst("result".localized.count)) else {
+                    guard let idVar = Int(String(text[Range(result.range, in: text)!]).dropFirst(1)) else {
                         return
                     }
                     let line = CalculSmartViewModel.shared.histoLines.first { line in
